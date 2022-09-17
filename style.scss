@@ -1,0 +1,85 @@
+$navbar-padding-y:2rem;
+$nav-link-color:#ffff;
+$dark: #f0f0f0;
+$warning:hsl(0, 0%, 48%);
+//$white:hsl(0, 0%, 48%);
+$secondary:hsl(0, 0%, 0%);
+$link-color:hsl(0, 0%, 0%);
+$info: hsl(176, 50%, 47%);
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;700&display=swap');
+@import "node_modules/@fortawesome/fontawesome-free";
+
+:root{
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-gray: hsl(0, 0%, 48%);
+
+}
+body{
+  font-family: 'Commissioner', sans-serif;
+  //height: 200vh;
+  background-image: url("images/image-hero-desktop.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.mastercraft{
+
+  position: relative;
+  top: -40px;
+
+}
+
+.mastercraft-text{
+  text-align: center;
+
+}
+.text-card{
+  width: 700px;
+  padding: 50px;
+}
+.bookmark{
+
+  font-weight: 500;
+  padding: 10px;
+}
+.bookmark div{
+  background-color: #f0f0f0;
+}
+
+.bi-bookmark-fill{
+  position: relative;
+  top: -2px;
+  padding: 15px;
+  font-size: 10px;
+  color: var(--Dark-gray);
+  left: -8px;
+}
+p{
+  color: var(--Dark-gray);
+  font-size: 14px;
+}
+h4{
+  font-weight: 700;
+}
+small{
+  color:var(--Dark-gray);
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+@include media-breakpoint-down(md) {
+  body{
+    background-image: url("images/image-hero-mobile.jpg");
+    background-position: top;
+    height:350vh;
+  }
+  .text-card{
+   width: auto;
+  }
+  .bookmark div{
+    background-color: white;
+  }
+}
